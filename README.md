@@ -1,0 +1,2 @@
+# SimpleStockScraper
+For Inspirit AI
