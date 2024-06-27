@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Expert</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Expert</h1>
+        <form action="/process" method="get">
+            <div class="input-container">
+                <label for="prompt">Enter your query:</label>
+                <input type="text" id="prompt" name="prompt" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="output-container">
+            <h2>Response</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+</html>
